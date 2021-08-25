@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Alejandro - Portfolio Website</title>
+    <link rel="shortcut icon" href="images/A-logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9ff09add6c.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="scrollTop" onclick="scrollToTop();"></div>
+    <header>
+        <a href="#home" class="logo"></a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="menu">
+                <li><a href="#home" onclick="toggleMenu()">Inicio</a></li>
+                <li><a href="#about" onclick="toggleMenu()">Sobre mí</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Servicios</a></li>
+                <li><a href="#work" onclick="toggleMenu()">Trabajos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+            </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h1>Hola, mi nombre es <br><span>Alberto Alejandro</span></h1>
+            <h2>Espero te guste mi sitio web</h2>
+            <a href="#about" class="button principal">Sobre mí</a>
+            <a href="#about" class="button principal">Descargar CV</a>
+        </div>
+        <div class="all-logo">
+            <div class="logoBx">
+            </div> 
+            <div id="play" data-playing="false" role="switch" aria-checked="false">
+            </div>
+        </div>
+    </section>
+
+    <section class="about sec" id="about">
+        <div class="heading">
+            <h2>Sobre mí</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h2>Soy Frontend Developer</h2>
+                <p> <span>console.log('Hola extraño 😂');</span><br />
+                    Un placer tenerte por aquí, te contare un poco sobre mí. Me interesa mucho el mundo de la programación, por ahora solo me dedico al desarrollo web. Siempre estoy en constante aprendizaje de nuevas habilidades y tecnologías. <br /> 
+                    Soy estudiante de ingeniería de sistemas en Venezuela, usualmente también estudio en plataformas como Platzi, Udemy o YouTube.<br />
+                    Me gusta desarrollar páginas web con diferentes tecnologías, intento no casarme con ninguna herramienta en específico pero mi stack favorito es Laravel junto con Vue. <br />
+                    <span>console.log('Gracias por leer, conocido 🤣');</span>
+                </p>
+            </div>
+            <div class="w50 my-card">
+                <div class="card">
+                    <div class="toggleDark"></div>
+                    <div class="container">
+                        <div class="photoContainer">
+                            <div class="photo">
+                                <img src="images/photo.jpg" alt="my-photo">
+                            </div>
+                            <h3>Alberto Alejandro <br/><span>Frontend Dev</span></h3>
+                            <ul class="sci">
+                                <li><a href="https://wa.me/584249448022"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                                <li><a href="https://t.me/albertoalejandro10"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/albertoalejandro10/"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                <li><a href="https://github.com/albertoalejandro10/"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Mis herramientas</h2>
+            <p>Estos son los lenguajes de programación y frameworks con los que me siento más cómodo</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="images/js-brands.svg" class="filter javascript" alt="JavaScript">
+                <h2>JavaScript</h2>
+                <p>Tengo un nivel intermedio en este lenguaje de programación domino la manipulación del DOM y crear eventos, también cuento con conocimientos un poco más avanzados como Async/Await, POO, npm.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/css3-alt-brands.svg" class="filter css3" alt="css3">
+                <h2>CSS3</h2>
+                <p>En este lenguaje de estilos considero que tengo un nivel intermedio, puedo realizar páginas webs agradables y tengo conocimientos sobre Flexbox, media queries y animaciones. Ademas he logrado dominar la metodología Mobile First y conceptos de accesibilidad.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/vuejs-brands.svg" class="filter vuejs" alt="vue">
+                <h2>Vue Framework</h2>
+                <p>Mi framework de JS favorito (jaja) aún no he logrado avanzar tanto en mi dominio de esta herramienta pero conozco todos sus conceptos básicos hasta su reactividad y progresividad.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/php-brands.svg" class="filter php" alt="php">
+                <h2>PHP</h2>
+                <p>He desarrollado aplicaciones de nivel intermedio en PHP, tengo un buen nivel en este lenguaje de programacion. Desde hace un tiempo desarrollo en Laragon con Nginx, PHP y mySQL.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/wordpress-brands.svg" class="filter wordpress" alt="wordpress">
+                <h2>WordPress</h2>
+                <p>Considero que tengo un nivel básico, sé crear temas y plugins desde cero para WordPress, Adicional, utilizo WooCommerce para desarrollar una tienda virtual. Aún me falta mucho que aprender en esta herramienta.</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/laravel-brands.svg" class="filter laravel" alt="laravel">
+                <h2>Laravel Framework</h2>
+                <p>Me gusta mucho esta herramienta es increíble para el desarrollo. Utilizo Laravel Inertia para aprovechar el sistema de rutas de Laravel y Vuejs para el desarrollo del lado del cliente. Utilizo Laragon como entorno de desarrollo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>Últimos trabajos</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <img src="images/product1.jpg" alt="producto-uno">
+            </div>
+            <div class="workBx">
+                <img src="images/product2.jpg" alt="producto-dos">
+            </div>
+            <div class="workBx">
+                <img src="images/product3.jpg" alt="producto-tres">
+            </div>
+            <div class="workBx">
+                <img src="images/product4.jpg" alt="producto-cuatro">
+            </div>
+        </div>
+        <div class="heading">
+            <a class="btn" href="https://github.com/albertoalejandro10/">Ver más en GitHub <i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contacto</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Información de contacto</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>6201 Maturín Monagas, <br> Venezuela</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-mobile"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+584249448022</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>alberto196g@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form id="form" action="">
+                    <h3>Contactarme</h3>
+                    <input type="text" name="name" placeholder="Nombre completo" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Escribe tu mensaje" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+                <a id="mailto" href="mailto:alberto196g@gmail.com" hidden>mail</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright © 2021. Todos los derechos reservados</p>
+    </div>
+
+    <audio src="resources/home.mp3"></audio>
+
+    <script src="app.js"></script>
+</body>
+</html>
