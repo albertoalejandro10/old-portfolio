@@ -452,7 +452,9 @@ section.dark .toggleDark::before {
 
 /* Services */
 .services {
-    background: var(--primary-color);
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #035D98);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #035D98); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
 .heading.white{
@@ -464,6 +466,17 @@ section.dark .toggleDark::before {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.services .heading h2 {
+    color: var(--just-white);
+    background: initial;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+}
+
+.services h3 {
+    color: var(--secondary-color);
 }
 
 .services .content .servicesBx {
@@ -579,7 +592,9 @@ section.dark .toggleDark::before {
 /* Contacto */
 
 .contact {
-    background: var(--warm-black);
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #080914, #035D98);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #080914, #035D98); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .formBx {
@@ -674,7 +689,9 @@ section.dark .toggleDark::before {
 /* Copyright */
 
 .copyright {
-    background: var(--warm-black);
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #080914, #035D98);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #080914, #035D98); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: var(--just-white);
     text-align: center;
     padding: 10px;
