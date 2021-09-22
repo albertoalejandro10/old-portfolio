@@ -744,10 +744,12 @@ section.dark .toggleDark::before {
     }
 
     .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: fixed;
         top: 75px;
         left: -100%;
-        display: block;
         padding: 100px 50px;
         text-align: center;
         width: 100%;
