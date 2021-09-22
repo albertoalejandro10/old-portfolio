@@ -222,12 +222,14 @@ header.sticky ul li a:hover {
     color: var(--warm-black);
 }
 
-.heading h2 {
+.heading.multicolor h2 {
+    width: 25%;
+    margin: auto;
     font-weight: 600;
     font-size: 30px;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgba(238,61,0,1) 50%, rgba(0,0,0,1) 75%);
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 0, 255));
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: transparent;
 }
 
 .content {
@@ -364,7 +366,7 @@ section .card .sci li a:hover {
 
 section .card .sci li a .fab {
     position: relative;
-    z-index: 1000;
+    z-index: 999;
 }
 
 section .card .sci li a:before {
@@ -406,12 +408,6 @@ section.dark {
 
 section.dark .card {
     background: var(--grey);
-}
-
-section.dark .heading h2{
-    background: linear-gradient(90deg, rgba(6,156,255,1) 0%, rgba(3,93,152,1) 50%, rgba(5,156,255,1) 100%);
-    -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 
 section.dark .contentBx h2{
@@ -834,6 +830,10 @@ section.dark .toggleDark::before {
         font-size: 24px;
     }
 
+    .heading.multicolor h2 {
+        width: 30%;
+    }
+
     .contentBx h2 {
         font-size: 20px;
         margin-bottom: 10px;
@@ -893,6 +893,10 @@ section.dark .toggleDark::before {
     section {
         padding: 100px 20px;
     }
+
+    .heading.multicolor h2 {
+        width: 40%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -910,6 +914,10 @@ section.dark .toggleDark::before {
     .button.principal {
         width: 150px;
         letter-spacing: 1px;
+    }
+
+    .heading.multicolor h2 {
+        width: 90%;
     }
 
     section.about .content {
