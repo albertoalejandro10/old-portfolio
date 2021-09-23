@@ -40,19 +40,13 @@ section {
 }
 
 .banner h1 {
-    font-size: 3em;
-    color: var(--just-white);
-    font-weight: 500;
-}
-
-.banner h1 span {
-    font-size: 1.5em;
+    font-size: 4em;
     font-weight: 700;
     color: var(--secondary-color);
 }
 
 .banner h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: var(--just-white);
     font-weight: 500;
 }
@@ -809,7 +803,7 @@ section.dark .toggleDark::before {
     }
 
     .banner h1 {
-        font-size: 2em;
+        font-size: 2.8em;
     }
 
     .banner h2 {
@@ -880,16 +874,12 @@ section.dark .toggleDark::before {
     }
 
     .banner h1 {
-        line-height: 2em;
+        line-height: 1.2em;
+        font-size: 2.4em;
     }
     
     .banner h2 {
         font-size: 1.6em;
-    }
-
-    .banner h1 span {
-        line-height: 1.2em;
-        font-size: 2em;
     }
 
     section {
@@ -910,10 +900,26 @@ section.dark .toggleDark::before {
 @media (max-width: 425px) {
 
     .banner {
-        padding: 0px 120px 40px 120px;
+        padding: 0px 120px 0px 120px;
+    }
+
+    .banner .textBx {
+        text-align: center;
+    }
+
+    .banner .textBx h1 {
+        font-size: 3.4em;
+    }
+
+    .banner .textBx .buttons {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
     }
     
     .button.principal {
+        margin: 6px;
         width: 150px;
         letter-spacing: 1px;
     }
