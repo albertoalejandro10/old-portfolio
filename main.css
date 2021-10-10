@@ -253,10 +253,37 @@ section .card {
     height: 380px;
     background: var(--warm-black);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.025);
-    border-radius: 16px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+
+section .card::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: linear-gradient(red, blue);
+    animation: animate 8s linear infinite;
+}
+
+section .card::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: inherit;
+    border-radius: 16px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .w50 {
@@ -294,6 +321,7 @@ section .card .photoContainer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 1000;
 }
 
 section .card .photoContainer .photo{
@@ -390,6 +418,7 @@ section .card .sci li a:hover:before {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 1000;
 }
 
 section.dark .toggleDark {
