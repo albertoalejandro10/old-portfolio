@@ -87,10 +87,10 @@ section {
     color: var(--warm-black);
     transition-delay: 0.8s;
     background-size: 180px;
-    animation: animate 0.8s steps(8) forwards;
+    animation: pixels 0.8s steps(8) forwards;
 }
 
-@keyframes animate {
+@keyframes pixels {
     0% {
         background-position-y: 0;
     }
