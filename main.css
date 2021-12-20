@@ -993,6 +993,11 @@ footer p {
         margin: auto;
         justify-content: space-between;
     }
+
+    header, header.sticky {
+        padding: 20px 42px;
+        justify-content: space-between;
+    }
     
     .button.principal {
         margin: 6px;
@@ -1006,6 +1011,14 @@ footer p {
 
     section.about .content {
         flex-wrap: wrap;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .contentBx {
+        padding-right: initial;
     }
 
     .work .content .workBx {
