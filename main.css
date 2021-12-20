@@ -778,7 +778,7 @@ footer p {
     right: 40px;
     width: 60px;
     height: 60px;
-    background: var(--secondary-color) url(images/up.svg);
+    background: var(--primary-color) url(images/up.svg);
     border-radius: 50%;
     background-size: 40px;
     background-position: center;
@@ -793,7 +793,7 @@ footer p {
 .scrollTop.active {
     bottom: 40px;
     visibility: visible;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 /* Responsive */
@@ -997,6 +997,12 @@ footer p {
     header, header.sticky {
         padding: 20px 42px;
         justify-content: space-between;
+    }
+
+    .scrollTop {
+        width: 30px;
+        height: 30px;
+        background-size: 20px;
     }
     
     .button.principal {
